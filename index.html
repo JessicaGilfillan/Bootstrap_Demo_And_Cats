@@ -1,33 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Add Bootsrap CDN link here-->
+    <!-- Add Bootstrap CDN link here-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
     <title>Bootstrap Demo</title>
 </head>
+
 <body>
-    <!-- Add Bootstrap Nav Here-->
-    <header>
-        <h1> Building with Bootstrap Demo</h1>
-    </header>
-    <main>
-        <section>
-            <h2> Some Headline Here</h2>  
-        </section>
-        <section>
-            I'm baby photo booth four dollar toast deep v prism. Jean shorts man bun semiotics, 3 wolf moon photo booth flannel selvage 90's taiyaki shaman cloud bread YOLO lumbersexual lo-fi +1. Unicorn hella praxis 8-bit. Small batch pug pour-over single-origin coffee trust fund godard PBR&B twee XOXO jean shorts tonx. Man bun tousled cornhole, irony ugh sriracha bitters celiac kombucha listicle church-key. Tacos street art forage, schlitz raclette etsy wolf stumptown plaid direct trade.
-        </section>
-        <section>
-            <img src="assets/pexels-lina-kivaka-1741205.jpg" alt="cat">
-            I'm baby skateboard knausgaard organic pitchfork ennui normcore hashtag, heirloom fanny pack four dollar toast selfies freegan cold-pressed pug put a bird on it. Next level yr twee sustainable polaroid church-key kitsch gentrify chillwave vegan disrupt austin jianbing. Meditation hexagon bitters fingerstache tacos offal jean shorts. Gochujang narwhal man braid paleo slow-carb kinfolk chambray. Jean shorts etsy echo park leggings, ramps put a bird on it lyft vegan coloring book vaporware. Cardigan heirloom asymmetrical normcore cray, four loko offal tumeric. Aesthetic retro wayfarers meh artisan chillwave butcher tilde trust fund craft beer photo booth raclette marfa neutra hammock.
-        </section>
-        <section>
-            <img src="assets/cat2.jpg" alt="cat">
-            <img src="assets/cat3.jpg" alt="cat">
-            <img src="assets/cat4.jpg" alt="cat">
-        </section>
-    </main>
+    <div class="container">
+        <!-- Add Bootstrap Nav Here-->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <h1> Building with Bootstrap Demo</h1>
+        </header>
+        <main>
+            <section>
+                <h2> Some Headline Here</h2>
+            </section>
+
+            <div class="row">
+                <section class="col-md-6">
+                    <p>I'm baby photo booth four dollar toast deep v prism. Jean shorts man bun semiotics, 3 wolf moon
+                        photo booth flannel selvage 90's taiyaki shaman cloud bread YOLO lumbersexual lo-fi +1. Unicorn
+                        hella praxis 8-bit. Small batch pug pour-over single-origin coffee trust fund godard PBR&B twee
+                        XOXO
+                        jean shorts tonx. Man bun tousled cornhole, irony ugh sriracha bitters celiac kombucha listicle
+                        church-key. Tacos street art forage, schlitz raclette etsy wolf stumptown plaid direct trade.
+                    </p>
+
+                    <p>I'm baby skateboard knausgaard organic pitchfork ennui normcore hashtag, heirloom fanny pack four
+                        dollar toast selfies freegan cold-pressed pug put a bird on it. Next level yr twee sustainable
+                        polaroid church-key kitsch gentrify chillwave vegan disrupt austin jianbing. Meditation hexagon
+                        bitters fingerstache tacos offal jean shorts. Gochujang narwhal man braid paleo slow-carb
+                        kinfolk
+                        chambray. Jean shorts etsy echo park leggings, ramps put a bird on it lyft vegan coloring book
+                        vaporware. Cardigan heirloom asymmetrical normcore cray, four loko offal tumeric. Aesthetic
+                        retro
+                        wayfarers meh artisan chillwave butcher tilde trust fund craft beer photo booth raclette marfa
+                        neutra hammock.</p>
+                    <p>I'm baby readymade bespoke lo-fi enamel pin kale chips DIY succulents. Beard jianbing mustache
+                        hammock
+                        kitsch, lomo fixie tattooed. Tofu man braid cold-pressed intelligentsia photo booth, beard
+                        pop-up viral
+                        succulents. Thundercats health goth offal, vape church-key copper mug chia kinfolk. Tbh venmo
+                        try-hard
+                        ethical. Banjo cliche humblebrag brooklyn.</p>
+
+                    <p>Mustache bushwick palo santo iceland lumbersexual migas vinyl, retro plaid. Whatever narwhal
+                        cliche palo
+                        santo. Schlitz air plant next level fam plaid asymmetrical green juice mustache DSA. Health goth
+                        dreamcatcher mumblecore put a bird on it, 90's chartreuse fingerstache normcore. Kitsch tumblr
+                        gastropub
+                        glossier chambray pickled, coloring book brooklyn mlkshk stumptown banh mi hammock iPhone
+                        tousled green
+                        juice.</p>
+
+                    <p> Tonx cred af live-edge, DSA lomo tote bag retro. Pop-up gentrify kickstarter, try-hard tumeric
+                        cold-pressed la croix food truck four dollar toast. Af gluten-free snackwave hammock.
+                        Cold-pressed poutine
+                        vexillologist flannel, photo booth gochujang dreamcatcher YOLO unicorn raclette artisan put a
+                        bird on it
+                        kinfolk pinterest gastropub. Jianbing neutra cornhole, palo santo YOLO blue bottle 8-bit yr.
+                        Irony poutine
+                        man bun cronut, try-hard semiotics farm-to-table. Kinfolk +1 seitan, ramps ugh post-ironic VHS
+                        keffiyeh
+                        neutra meggings synth forage bicycle rights messenger bag asymmetrical. </p>
+                </section>
+                <section class="col-md-6">
+                    <img src="assets/pexels-lina-kivaka-1741205.jpg" alt="cat" class="img-fluid">
+
+                </section>
+            </div>
+            <!--end row-->
+            <section class="row">
+                <h3> Another Headline Here</h3>
+                <div class="col-md-4">
+                    <img src="assets/cat2.jpg" alt="cat" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/cat3.jpg" alt="cat" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/cat4.jpg" alt="cat" class="img-fluid">
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
+
 </html>
